@@ -49,5 +49,17 @@ public class Veritabani {
 		
 	}
 	
+	static void guncelle(String sorgu) {
+		Statement  st;
+		try {
+			st = conn.createStatement();
+			st.executeUpdate(sorgu);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 }
