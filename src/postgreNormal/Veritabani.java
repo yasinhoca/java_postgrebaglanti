@@ -61,5 +61,42 @@ public class Veritabani {
 		
 	}
 	
+	static void olustur(String sorgu) {
+		Statement  st;
+		try {
+			st = conn.createStatement();
+			st.execute(sorgu);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	static void sil(String sorgu) {
+		Statement  st;
+		try {
+			st = conn.createStatement();
+			st.execute(sorgu);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	static void ekle(String sorgu) {
+		Statement  st;
+		try {
+			st = conn.createStatement();
+			st.executeUpdate(sorgu);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 }
